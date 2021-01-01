@@ -2,6 +2,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{parcolumns}
 \usepackage{polyglossia}
+% Hyperref package for generating hyperlinks
+\usepackage{hyperref}
 
 \title{Law of the General Assembly on Steelyards}
 % Indicate author and translator; currently have two authors since
@@ -11,10 +13,11 @@ Anonymous\\
 \and
 J.S. Love, trans.}
 
-% Indicate that original language is Icelandic (Old Norse not an option...?)
-\setmainlanguage{icelandic}
-% Indicate target language is English
-\setotherlanguage{english}
+
+% Indicate main language of document is English
+\setmainlanguage{english}
+% Add support for Icelandic (Old Norse not an option...?)
+\setotherlanguage{icelandic}
 \thispagestyle{empty}
 \begin{document}
 \maketitle
@@ -22,27 +25,30 @@ J.S. Love, trans.}
 
 \section*{Introduction}
 
-Below is an edition and translation of a medieval Icelandic legal document. It
+This is an edition and translation of a medieval Icelandic legal document. It
 is intended to serve as an example for how historical texts might be translated
-and distributed more openly; cf. my OpenTranslation project at https://github.com/ThorkellMoon/OpenTranslation.
+and distributed more openly, especially as drafts prior to
+publication; cf. \href{https://github.com/ThorkellMoon/OpenTranslation}{my OpenTranslation project on Github}.
 \par
 In the left column is the original text copied from the source (n.b. manually
 copied, so there may well be errors; ideally this would be imported or copied
-and pasted).
+and pasted in cases where the editorial work has already been done). Spelling, punctuation and syntax have been retained from the edition, but no attempt has been made to replicate non-standard characters in the edition. The character 'o' with ascending hook is here rendered as 'ö'. Small caps in the edition have been ignored.
 
-\section*{Text Description}
-% Need formatting for bibliography
-The text below comes from Diplomatarium Islandicum. 1857-76. Vol I, pp. 311-312.
+\section*{Edition}
+The source text below comes from \textit{Diplomatarium Islandicum}. 1857-76. Vol I, pp. 311-312.
+At the time of writing a copy is freely available online on \href{https://baekur.is/bok/000197700/DiplomatariumIslandicum}{baekur.is}.
 It is dated there to c. 1200 and presented in three witnesses: A, B and C. The
-text here is from A, which was edited from AM 347 fol. (Belgdalsbók), a manuscript
-dated to c. 1340-70 (cf. the catalogue description in Handrit.is: https://handrit.is/en/manuscript/view/is/AM02-0347).
+text here is from A, which was edited from AM 347 fol. (\textit{Belgdalsbók}), a manuscript
+dated to c. 1340-70 according to \href{https://handrit.is/en/manuscript/view/is/AM02-0347}{the catalogue description in Handrit.is}.
 It has also been printed as an addition in Vilhjálmr Finsen's edition of
 Grágás. [will need to expand this]
+
 \section*{Translator's statement}
-Wherever possible the translation below follows the convention set by the 1980-2000
-[2x check date] translation of Grágás by Foote, Perkins and Dennis.
+Wherever possible the translation below follows the conventions for translating medieval Icelandic
+legal terminology into English set by the 1980-2000 translation of \textit{Grágás} by Foote, Perkins and Dennis. \footnote{Dennis, Andrew, Peter Foote and Richard Perkins, trans. 1980–2000. \textit{Laws of Early Iceland. Grágás}. 2 vols. Winnipeg: University of Manitoba Press}
 
-
+\section*{Introduction}
+This short text refers to regulations for steelyards, scales used for measuring items by weight [could use a good reference on medieval steelyards]. N.b. something is amiss with footnotes within the parcolumns package. Need to figure out what this is.
 
 \section*{82. Law of the General Assembly on Steelyards}
 \begin{parcolumns}{2}
@@ -55,29 +61,29 @@ Wherever possible the translation below follows the convention set by the 1980-2
 \colchunk{Ef maðr a pundara meira eða minna en mællt er ok varðar þat .iij. marka sekt.}
 \colchunk{If a man has a steelyard greater or less than stated, then the penalty is a fine of three marks.}
 \colplacechunks
-\colchunk{Nu reiðir hann rangar veittir eða mælir hann rangar alnar sva at munar vm oln j .xx. alnum. þa varðar fiorbaugs garð.}
-\colchunk{Now if he ?prepares false weights or he measures false ells so that there ?wants 1 ell in 20 [??], then the penalty for that is lesser outlawry.}
+\colchunk{Nu reiðir hann rangar vettir eða mælir hann rangar alnar sva at munar vm oln j .xx. alnum. þa varðar fiorbaugs garð.}
+\colchunk{Now if he ?prepares false weights, or he measures false ells so that there is a difference of 1 ell in 20, then the penalty for that is lesser outlawry.}
 \colplacechunks
-\colchunk{[p. 312] sa a sok er sins hefir j þui mist. en ef hann vill eigi sökia þa a sa er vill. Til sakar þeirrar skal kuæðia a þingi .ix. [?] heimilis bua þess er sottr er.}
-\colchunk{[p. 312] The one whose property is lacking is to have the case. And if he does not wish to prosecute it, then whoever wants is to have it. Nine neighbours of the one accused are to be called for those cases.}
+\colchunk{[p. 312] sa a sok er sins hefir j þui mist. en ef hann vill eigi sökia þa a sa er vill. Til sakar þeirrar skal kuæðia a þingi .ix. heimilis bua þess er sottr er.}
+\colchunk{[p. 312] The one whose property is lacking is to have the case. And if he does not wish to prosecute it, then whoever wants is to have it. Nine neighbours of the one accused are to be called to the assembly for those cases.}
 \colplacechunks
 \colchunk{Sök þeirri skal stefna at heimile þess er sottr er. eða þar sem hann heyrir sialfr aa.}
-\colchunk{That case is to be summoned at the home of the one accused or there ?to which he belongs.}
+\colchunk{That case is to be summoned at the home of the one accused or there ?to which he belongs.\footnote{Presumably this refers to non-owners, e.g. lodgers}}
 \colplacechunks
 \colchunk{Rett er þeim er sökir at stefna j þingbrekku a varþingi. þui er hann heyr sialfr. ok skal þui at eins rett at stefna þar j dom ef sa er a þingi er sottr er. en elligar skal stefna til alþingis.}
-\colchunk{It is lawful for those who are prosecuting to issue a summons at the assembly slope at the spring assembly to which he himself belongs. And it shall be ?equally lawful to issue a summons there in a course if the one being accused is at the assembly. But otherwise the summons is to be issued for the General Assembly.}
+\colchunk{It is lawful for those who are prosecuting to issue a summons at the assembly slope at the spring assembly to which he himself belongs. And it shall only be lawful to issue a summons there in a court if the one being accused is at the assembly. But otherwise the summons is to be issued for the General Assembly.}
 \colplacechunks
 \colchunk{Ef sia sok verðr rett höfðut. ok koma þau gaugn fram með henni at domi sem henni eigu at fylgia þa skulo eigi varnir metaz vm þat mal ok eigi skulo gagnsakar. metaz ef þat eru [eigi] sekðar sakar amot. alna mals sok.}
 \colchunk{If that case is lawfully brought forth, and formal means of proof are produced for it at the court to which it [the case] should accompany, then no defense is to be considered for that case, and there is to be no counter-suits. There will be consideration if there are [not] outlawry cases ?against him, ??a case for the measure of ells.}
 \colplacechunks
 \colchunk{Þott eigi se lengra vaðmal mællt rongum alnum. en .iij. alnar ok varðar þo. fiorbaugs garð. ok von er at muna mundi oln. j .xx. alnum ef sua langt vaðmal væri. slikum alnum mællt.}
-\colchunk{Even though homespun cloth is not wrongly measured more than three ells, then the penalty is lesser outlawry. And it is expected that there will be an ?ell in 20 ells if the homespun cloth is that long. ?in such ells measured.}
+\colchunk{Even though homespun cloth is not wrongly measured more than three ells, then the penalty is lesser outlawry. And it is expected that there will be a difference of one ell in 20 if the homespun cloth is that long. ?in such ells measured.}
 \colplacechunks
 \colchunk{Slikt varðar vm rangar alnar lerepte sem a vaðmalum.}
 \colchunk{It is the same penalty for wrong ells of linen as for homespun cloth.}
 \colplacechunks
 \colchunk{Rett er at sökia vtan landz menn vm alnar rangar at heraðs domi. slikri sokn sem til er mællt vm rettafars sakar.}
-\colchunk{It is lawful to prosecute foreign man for wrong ells at the quarter court with the same prosecution as is stipulated for cases concerning personal compensation.}
+\colchunk{It is lawful to prosecute foreign men for wrong ells at the quarter court with the same prosecution as is stipulated for cases concerning personal compensation.}
 \colplacechunks
 
 
