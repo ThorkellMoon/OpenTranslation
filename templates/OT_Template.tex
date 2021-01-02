@@ -1,0 +1,73 @@
+% Template for OpenTranslation (translation) documents
+% cf. https://github.com/ThorkellMoon/OpenTranslation
+
+% Header information
+% Stipulates that the document is an article (rather than e.g. a book)
+\documentclass[12pt]{article}
+% Includes utf-8 encoding
+\usepackage[utf8]{inputenc}
+% Package for presenting dual columns
+\usepackage{parcolumns}
+% Package for handling multiple languages in a single document
+\usepackage{polyglossia}
+% Hyperref package for generating hyperlinks
+\usepackage{hyperref}
+
+% Title to appear at head of document
+\title{Title}
+% Indicate author and translator; a more elegant way of doing this is needed
+% Currently don't know how to indicate a role of editor/translator
+\author{
+Author\\
+\and
+Translator, trans.}
+
+
+% Indicate main language of document (language translating to; default is English)
+\setmainlanguage{english}
+% Indicate language of source document (default currently Icelandic)
+% Consult the Polyglossia package documentation for a list of supported languages: https://www.ctan.org/pkg/polyglossia
+\setotherlanguage{icelandic}
+% End of header
+
+% Beginning of document content
+\begin{document}
+% Apply title and author information given in header
+\maketitle
+
+% Introductory material dvided by section
+% The sections below are only suggestions. They can be removed or replaced as desired.
+\section*{Introduction}
+
+[Insert introductory material here]
+
+
+\section*{Edition}
+[insert information on primary source being translated here]
+
+
+\section*{Translator's statement}
+[insert information on translation here]
+
+
+\section*{Introduction}
+[insert further introductory/commentary material here]
+
+% Here begins the section for source text and translated text
+\section*{Section Title}
+% The number of paragraphs can be modified by changing the {2} below, but note that more than 3 will be difficult to display on a single PDF page
+\begin{parcolumns}{2}
+\colchunk{[insert source text]}
+\colchunk{[insert translated text]}
+\colplacechunks
+% Each set of colchunks represents a unit (e.g. a paragraph) of parallel text
+\colchunk{[insert source text]}
+\colchunk{[insert translated text]}
+\colplacechunks
+
+% End of translated text
+\end{parcolumns}
+
+
+% End of document
+\end{document}
